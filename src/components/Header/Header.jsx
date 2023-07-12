@@ -22,12 +22,6 @@ const Header = () => {
         </nav>
         <button className="header__button">Напишите нам</button>
       </section>
-      <section className="header__title">
-        <h1>Возьмите ваши финансы под контроль</h1>
-        <Link to="/contacts" className="header__contacts">
-          <p>Запланируйте финансовую консультацию</p>
-        </Link>
-      </section>
     </header>
   );
 };
