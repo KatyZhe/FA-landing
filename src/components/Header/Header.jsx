@@ -1,6 +1,6 @@
-import "./Header.css";
-import logo from "../../logo.svg";
-import { Link } from "react-router-dom";
+import './Header.scss';
+import logo from '../../logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -21,12 +21,6 @@ const Header = () => {
           </Link>
         </nav>
         <button className="header__button">Напишите нам</button>
-      </section>
-      <section className="header__title">
-        <h1>Возьмите ваши финансы под контроль</h1>
-        <Link to="/contacts" className="header__contacts">
-          <p>Запланируйте финансовую консультацию</p>
-        </Link>
       </section>
     </header>
   );

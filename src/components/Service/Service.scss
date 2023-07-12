@@ -1,0 +1,46 @@
+.service {
+    background-color: #fdf0e6;
+    width: 100vw;
+    height: 90vh;
+
+    &__title {
+        color: #f08e80;
+        font-weight: normal;
+        font-size: 40px;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    &__block {
+        width: 80vw;
+        max-width: 1120px;
+        margin: auto;
+        display: grid;
+        list-style: none;
+        padding: 0;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 200px);
+        gap: 30px;
+    }
+
+    &__item-title {
+        color: #f08e80;
+        font-weight: normal;
+        font-size: 22px;
+    }
+
+    &__item-description {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    &__button {
+        padding: 12px 40px;
+        background-color: #f08e80;
+        color: white;
+        border: none;
+        font-size: 12px;
+    }
+}
