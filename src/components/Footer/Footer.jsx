@@ -15,6 +15,7 @@ const Footer = () => {
             New York, NY 12345
           </li>
         </ul>
+
         <ul className="footer__description footer__description_position">
           Contact
           <li className="footer__text footer__text_margin-top">
@@ -36,6 +37,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+
         <ul className="footer__description">
           Follow
           <li className="footer__text footer__text_margin-top">

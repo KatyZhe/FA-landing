@@ -1,10 +1,11 @@
 .footer {
-  max-width: 1120px;
+  width: 100%;
   margin: 30px auto 50px;
+  font-family: 'PlayfairDisplay', Arial, sans-serif;
 
   &__title {
-    margin: 0 0 0 66px;
-    font-family: 'PlayfairDisplay', Arial, sans-serif;
+    margin: 0 0 0 70px;
+
     font-size: 34px;
     font-weight: 400;
     text-align: center;
@@ -12,7 +13,7 @@
 
   &__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   li {
@@ -22,14 +23,12 @@
   &__description {
     margin-top: 50px;
     padding: 0;
-    font-family: 'PlayfairDisplay', Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 15px;
   }
 
   &__text {
-    font-family: 'PlayfairDisplay', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 15px;
@@ -48,13 +47,15 @@
   }
 
   &__text_margin-bootom {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    width: 98vw;
+    &__title {
+      font-size: 24px;
+    }
 
     &__description {
       font-size: 18px;
@@ -83,14 +84,12 @@
     &__description {
       margin-top: 50px;
       padding: 0;
-      font-family: 'PlayfairDisplay', Arial, sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 15px;
     }
 
     &__text {
-      font-family: 'PlayfairDisplay', Arial, sans-serif;
       font-size: 12px;
       font-weight: 400;
       line-height: 15px;

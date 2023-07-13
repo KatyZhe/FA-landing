@@ -1,0 +1,210 @@
+.contact {
+  font-family: 'PlayfairDisplay', Arial, sans-serif;
+  width: 100%;
+  margin-bottom: 40px;
+
+  &__title {
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    color: #f08e80;
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 230px;
+    background-color: #fdf0e6;
+  }
+
+  &__info {
+    width: 25vw;
+    margin-top: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__table-contents {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  &__text_position {
+    margin-top: 40px;
+  }
+
+  &__container-socials {
+    margin-top: 30px;
+    width: 250px;
+    display: flex;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  &__form {
+    width: 55vw;
+    margin-top: 50px;
+  }
+
+  &__box-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0 0 10px 0;
+  }
+
+  &__name-required {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: #727272;
+  }
+
+  &__lable {
+    width: 49%;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  &__input-error {
+    display: block;
+    font-size: 10px;
+    width: 100%;
+    height: 24px;
+    margin: 6px auto 8px;
+    color: #ee3465;
+    opacity: 0;
+  }
+
+  &__input-error_activ {
+    opacity: 1;
+  }
+
+  &__lable-email {
+    width: 100%;
+  }
+
+  &__input-email {
+    width: 70vw;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+  }
+
+  &__input-message {
+    width: 100%;
+    height: 90px;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  &__help-text {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: start;
+  }
+
+  &__container-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label-checkbox {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  &__checkbox {
+    margin-right: 8px;
+  }
+
+  &__checkbox::before {
+    background-color: #000;
+  }
+
+  &__message {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: start;
+  }
+
+  &__input-message {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  &__notification {
+    width: 40vw;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: start;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact {
+    &__title {
+      font-size: 40px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    &__container {
+      width: 80%;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__table-contents {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__message {
+      font-size: 15px;
+    }
+  }
+}
