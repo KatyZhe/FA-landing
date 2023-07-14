@@ -12,7 +12,6 @@ const dataCeckbox = [
 
 const handleMessage = (values, checkbox) => {
   return `<b>Заявка с сайта!</b>\n
-  <b>Отправитель: </b>\n
   <b>Имя: ${values.name}</b>\n
   <b>Фамилия: ${values.last}</b>\n
   <b>Почта: ${values.email}</b>\n

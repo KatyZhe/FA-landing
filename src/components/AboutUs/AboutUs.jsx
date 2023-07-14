@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutUs.scss';
 import ImagePeople from '../../images/image-asset.jpeg';
+import Сonsultation from '../Сonsultation/Сonsultation';
 
 const AboutUs = () => {
   return (
@@ -25,6 +26,7 @@ const AboutUs = () => {
         distinctio.
       </p>
       <img className="about__photo" alt="Фото" src={ImagePeople} />
+      <Сonsultation />
     </section>
   );
 };

@@ -12,25 +12,25 @@ import Checkbox from '../Checkbox/Checkbox';
 const Contact = () => {
   const { values, isValid, handleChange } = useFormAndValidation();
   const [notification, setNotification] = useState(true);
-  const [toppings, setToppings] = useState(dataCeckbox);
+  const [data, setData] = useState(dataCeckbox);
 
   const handleCheckbox = (item) => {
     return item.map((i) => (i.checked ? i.name : ''));
   };
 
   const updateCheckStatus = (index) => {
-    setToppings(
-      toppings.map((topping, currentIndex) => {
+    setData(
+      data.map((item, currentIndex) => {
         return currentIndex === index
-          ? { ...topping, checked: !topping.checked }
-          : topping;
+          ? { ...item, checked: !item.checked }
+          : item;
       })
     );
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    postMessage(CHAT_ID, handleMessage(values, handleCheckbox(toppings)));
+    postMessage(CHAT_ID, handleMessage(values, handleCheckbox(data)));
     setNotification(false);
   };
 
@@ -148,7 +148,7 @@ const Contact = () => {
               {/* <span className="contact__name-required">(required)</span> */}
             </h4>
             <div className="contact__container-checkbox">
-              {toppings.map((i, index) => {
+              {data.map((i, index) => {
                 return (
                   <Checkbox
                     key={i.id}
