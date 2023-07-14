@@ -21,9 +21,6 @@ const Header = ({ openPopup, popup }) => {
           <Link to="/about" className="header__link">
             <p>О нас</p>
           </Link>
-          <Link to="/services" className="header__link">
-            <p>Услуги</p>
-          </Link>
           <Link to="/articles" className="header__link">
             <p>Статьи</p>
           </Link>
