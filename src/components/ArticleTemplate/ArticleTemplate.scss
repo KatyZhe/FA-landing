@@ -1,0 +1,30 @@
+.articleTemplate__item {
+    max-width: 900px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 250px calc(900px - 300px);
+    gap: 50px; 
+    margin-bottom: 70px;
+}
+
+.articleTemplate__item:last-child {
+    margin-bottom: 0;
+}
+
+.articleTemplate__title {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: normal;
+    font-size: 22px;
+    letter-spacing: .7px;
+}
+
+.articleTemplate__text {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
