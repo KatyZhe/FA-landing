@@ -1,19 +1,21 @@
 .header {
   background-color: #fdf0e6;
   display: flex;
-  // flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0;
 
   &__block {
     max-width: 1120px;
     min-width: calc(100vw - 60px);
-    height: 40px;
+    height: 50px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 40px;
+    margin: auto;
   }
 
   &__menu {
@@ -21,7 +23,6 @@
     flex-direction: row;
     gap: 20px;
     font-size: 16px;
-    margin-top: 8px;
   }
 
   &__link {
@@ -39,7 +40,6 @@
     border-style: none;
     font-size: 12px;
     cursor: pointer;
-    margin-top: 8px;
   }
 
   &__logo {
@@ -48,6 +48,22 @@
 
   &__burger {
     display: none;
+  }
+
+  &__langs {
+    display: flex;
+    width: 30px;
+    gap: 5px;
+  }
+
+  &__flag {
+    width: 20px;
+  }
+
+  &__langs-button {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -112,7 +128,13 @@
     &__block {
       max-width: 240px;
       min-width: calc(100vw - 40px);
-      margin: 20px auto;
+      //margin: 20px auto;
+    }
+
+    &__langs-button {
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

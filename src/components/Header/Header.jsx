@@ -1,6 +1,9 @@
 import './Header.scss';
 import logo from '../../logo.png';
 import { Link } from 'react-router-dom';
+import rus from '../../images/russia-flag.svg';
+import eng from '../../images/british-flag (1).svg';
+import es from '../../images/british-flag (2).svg';
 
 const Header = ({ openPopup, popup }) => {
   return (
@@ -25,7 +28,14 @@ const Header = ({ openPopup, popup }) => {
             <p>Статьи</p>
           </Link>
         </nav>
+        <div className='header__langs-button'>
+        <div className='header__langs'>
+          <img className='header__flag' src={rus} alt='флаг России' />
+          <img className='header__flag' src={eng} alt='флаг Великобритании' />
+          <img className='header__flag' src={es} alt='флаг Испании' />
+        </div>
         <button className="header__button">Напишите нам</button>
+        </div>
       </section>
     </header>
   );
