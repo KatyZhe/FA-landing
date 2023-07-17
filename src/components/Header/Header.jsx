@@ -1,9 +1,9 @@
 import './Header.scss';
-import logo from '../../logo.svg';
+import logo from '../../logo.png';
 import { Link } from 'react-router-dom';
 import rus from '../../images/russia-flag.svg';
-import eng from '../../images/british-flag-one.svg';
-import es from '../../images/british-flag-two.svg';
+import eng from '../../images/british-flag (1).svg';
+import es from '../../images/british-flag (2).svg';
 
 const Header = ({ openPopup, popup }) => {
   return (
