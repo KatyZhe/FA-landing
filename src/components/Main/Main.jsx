@@ -1,12 +1,10 @@
-import React from "react";
-import "./Main.scss";
+import React from 'react';
+import './Main.scss';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import Service from '../Service/Service';
 import Promo from '../Promo/Promo';
-
-
 
 const Main = () => {
   return (

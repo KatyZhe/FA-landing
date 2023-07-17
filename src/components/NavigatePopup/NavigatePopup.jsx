@@ -14,7 +14,7 @@ const NavigatePopup = ({ handlePopup }) => {
           <p>Статьи</p>
         </Link>
       </nav>
-      <Link className="navigation__button" onClick={handlePopup}>
+      <Link to="/contact" className="navigation__button" onClick={handlePopup}>
         Напишите нам
       </Link>
     </div>

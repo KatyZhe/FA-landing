@@ -2,6 +2,7 @@
   background-color: #fdf0e6;
   width: 100%;
   height: fit-content;
+  padding-bottom: 40px;
 
   &__item {
     padding: 0;
@@ -9,6 +10,7 @@
   }
 
   &__title {
+    text-align: center;
     color: #f08e80;
     font-weight: normal;
     font-size: 40px;
@@ -19,6 +21,7 @@
   &__about-service {
     color: black;
     font-size: 16px;
+    text-align: center;
     font-style: normal;
     margin-bottom: 40px;
   }
@@ -74,12 +77,20 @@
   }
 
   &__button {
-    margin: 40px auto 30px;
+    display: block;
+    width: 90px;
+    margin: 40px auto 0;
     padding: 12px 40px;
     background-color: #f08e80;
     color: white;
     border: none;
     font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__button:hover {
+    opacity: 0.8;
   }
 }
 
@@ -100,9 +111,9 @@
     }
 
     &__block {
-        width: 240px;
-        max-width: 240px;
-        grid-template-columns: repeat(1, 240px);
+      width: 240px;
+      max-width: 240px;
+      grid-template-columns: repeat(1, 240px);
     }
   }
 }

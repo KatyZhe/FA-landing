@@ -1,10 +1,11 @@
-import React from 'react';
-import './Footer.scss';
+import React from "react";
+import "./Footer.scss";
 
 const Footer = () => {
+  const currentYear = (new Date()).getFullYear();
   return (
     <footer className="footer">
-      <h4 className="footer__title">Degraw</h4>
+      <h4 className="footer__title">Название</h4>
       <div className="footer__container">
         <ul className="footer__description">
           Location
@@ -23,17 +24,6 @@ const Footer = () => {
           <li className="footer__text footer__text_margin-bootom"></li>
           <li className="footer__text footer__text_margin-bootom">
             email@example.com
-          </li>
-          <li className="footer__text footer__text_margin-bootom">
-            Made with
-            <a
-              className="footer__link footer__link_position"
-              href="https://www.squarespace.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Squarespace
-            </a>
           </li>
         </ul>
         <ul className="footer__description">
@@ -59,6 +49,28 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="footer__madeby">
+        <p>Made by
+        <a
+          className="footer__link footer__link_position"
+          href="https://github.com/AntonLiad"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Anton Laid 
+        </a>
+         &
+        <a
+          className="footer__link footer__link_position"
+          href="https://github.com/KatyZhe"
+          target="_blank"
+          rel="noreferrer"
+        >
+          KatyZhe
+        </a>
+        </p>
+        <p className="footer__copyright">&copy; {currentYear} Название фирмы</p>
       </div>
     </footer>
   );

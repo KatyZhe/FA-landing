@@ -1,17 +1,20 @@
 .footer {
-  max-width: 1120px;
-  margin: 30px auto 50px;
+  width: 100%;
+  margin: 30px auto;
+  font-family: "PlayfairDisplay", Arial, sans-serif;
 
   &__title {
-    margin: 0 0 0 66px;
-    font-family: 'PlayfairDisplay', Arial, sans-serif;
+    width: 190px;
+    margin: 0 auto;
+    font-family: "PlayfairDisplay", Arial, sans-serif;
     font-size: 34px;
     font-weight: 400;
-    text-align: center;
+    text-align: end;
   }
 
   &__container {
     display: flex;
+    justify-content: space-evenly;
     justify-content: space-around;
   }
 
@@ -20,16 +23,18 @@
   }
 
   &__description {
+    text-align: center;
     margin-top: 50px;
     padding: 0;
-    font-family: 'PlayfairDisplay', Arial, sans-serif;
+    margin-top: 50px;
+    padding: 0;
+    font-family: "PlayfairDisplay", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 15px;
   }
 
   &__text {
-    font-family: 'PlayfairDisplay', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 15px;
@@ -48,13 +53,26 @@
   }
 
   &__text_margin-bootom {
-    margin-top: 15px;
+    margin-top: 25px;
+  }
+
+  &__madeby {
+    width: 80%;
+    padding-top: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    text-align: right;
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    width: 98vw;
+    &__title {
+      width: 155px;
+      font-size: 24px;
+    }
 
     &__description {
       font-size: 18px;
@@ -76,21 +94,19 @@
 @media (max-width: 650px) {
   .footer {
     &__title {
+      width: 140px;
       font-size: 24px;
-      margin: 0 0 0 54px;
     }
 
     &__description {
       margin-top: 50px;
       padding: 0;
-      font-family: 'PlayfairDisplay', Arial, sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 15px;
     }
 
     &__text {
-      font-family: 'PlayfairDisplay', Arial, sans-serif;
       font-size: 12px;
       font-weight: 400;
       line-height: 15px;
@@ -100,15 +116,16 @@
 
 @media (max-width: 420px) {
   .footer {
-    width: 95vw;
+    width: 90vw;
 
     &__container {
       flex-direction: column;
     }
 
     &__title {
+      width: 100%;
       font-size: 20px;
-      margin: 10px 0 0 0;
+      text-align: center;
     }
   }
 }

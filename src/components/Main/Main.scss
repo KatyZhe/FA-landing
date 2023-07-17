@@ -2,6 +2,7 @@
   width: 100%;
   height: 450px;
   background-color: #fdf0e6;
+  margin: auto;
   display: flex;
   flex-direction: column;
 
@@ -14,10 +15,12 @@
     font-size: 56px;
     font-weight: normal;
     justify-content: center;
-    padding-bottom: 0;
+    align-items: center;
+    text-align: center;
   }
 
   &__contacts {
+    margin: auto;
     color: #f08e80;
     font-style: italic;
     letter-spacing: .1em;

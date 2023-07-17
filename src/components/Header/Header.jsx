@@ -12,14 +12,7 @@ const Header = ({ openPopup, popup }) => {
         <Link to="/" className="header__link">
           <img src={logo} alt="логотип заголовка" className="header__logo" />
         </Link>
-        <div
-          className={`header__burger ${popup ? 'header__burger_pop' : ''}`}
-          onClick={openPopup}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+
         <nav className="header__menu">
           <Link to="/about" className="header__link">
             <p>О нас</p>
@@ -28,13 +21,24 @@ const Header = ({ openPopup, popup }) => {
             <p>Статьи</p>
           </Link>
         </nav>
-        <div className='header__langs-button'>
-        <div className='header__langs'>
-          <img className='header__flag' src={rus} alt='флаг России' />
-          <img className='header__flag' src={eng} alt='флаг Великобритании' />
-          <img className='header__flag' src={es} alt='флаг Испании' />
-        </div>
-        <button className="header__button">Напишите нам</button>
+        {/* <button className="header__button">Напишите нам</button> */}
+        <div className="header__langs-button">
+          <div className="header__langs">
+            <img className="header__flag" src={rus} alt="флаг России" />
+            <img className="header__flag" src={eng} alt="флаг Великобритании" />
+            <img className="header__flag" src={es} alt="флаг Испании" />
+          </div>
+          <Link className="header__button" to="/contact">
+            Напишите нам
+          </Link>
+          <div
+            className={`header__burger ${popup ? 'header__burger_pop' : ''}`}
+            onClick={openPopup}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </section>
     </header>

@@ -21,18 +21,24 @@
   &__menu {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    width: 250px;
+    justify-content: end;
+    gap: 10px;
     font-size: 16px;
+    text-align: center;
   }
 
   &__link {
     color: black;
     text-decoration: none;
     font-weight: 100;
-    width: 50px;
   }
 
   &__button {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    text-align: center;
     width: 100px;
     height: 40px;
     background-color: #f08e80;
@@ -132,7 +138,7 @@
     }
 
     &__langs-button {
-      width: 70px;
+      width: 140px;
       display: flex;
       justify-content: space-between;
     }
