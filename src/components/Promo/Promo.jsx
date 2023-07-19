@@ -1,13 +1,12 @@
 import "./Promo.scss";
 import pic from "../../images/Fotolia.jpg";
+import {useTranslation} from "react-i18next";
 
 const Promo = () => {
+  const {t} = useTranslation();
   return (
     <section className="promo">
-      <p className="promo__text">
-        После всего одной консультации вы будете больше контролировать свой
-        бюджет, ваши финансовые цели и вашу жизнь
-      </p>
+      <p className="promo__text">{t("promo-text")}</p>
       <img
         src={pic}
         alt="картинка с довольным человеком"

@@ -1,11 +1,13 @@
 import React from "react";
 import "./Footer.scss";
+import {useTranslation} from "react-i18next";
 
 const Footer = () => {
+  const {t} = useTranslation();
   const currentYear = (new Date()).getFullYear();
   return (
     <footer className="footer">
-      <h4 className="footer__title">Название</h4>
+      <h4 className="footer__title">{t("footer")}</h4>
       <div className="footer__container">
         <ul className="footer__description">
           Location

@@ -27,8 +27,8 @@
   }
 
   &__block {
-    width: 600px;
-    max-width: 600px;
+    width: 800px;
+    max-width: 800px;
     margin: auto;
     display: grid;
     align-items: baseline;
@@ -36,7 +36,7 @@
     list-style-type: disclosure-closed;
     color: #f08e80;
     padding: 0;
-    grid-template-columns: repeat(1, 600px);
+    grid-template-columns: repeat(1, 800px);
     grid-template-rows: repeat(6, fit-content);
     gap: 20px;
   }
@@ -50,14 +50,14 @@
 
   &__item-h3 {
     font-weight: normal;
-    font-size: 22px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }
 
   &__item-p {
     font-weight: normal;
-    font-size: 22px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
   }

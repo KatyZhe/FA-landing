@@ -1,11 +1,16 @@
-import './Header.scss';
-import logo from '../../logo.png';
-import { Link } from 'react-router-dom';
-import rus from '../../images/russia-flag.svg';
-import eng from '../../images/british-flag (1).svg';
-import es from '../../images/british-flag (2).svg';
+import "./Header.scss";
+import logo from "../../logo.png";
+import { Link } from "react-router-dom";
+//import es from '../../images/british-flag (2).svg';
+
+import { useTranslation } from "react-i18next";
 
 const Header = ({ openPopup, popup }) => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   return (
     <header className="header">
       <section className="header__block">
@@ -15,24 +20,31 @@ const Header = ({ openPopup, popup }) => {
 
         <nav className="header__menu">
           <Link to="/about" className="header__link">
-            <p>О нас</p>
+            <p>{t("header-about")}</p>
           </Link>
           <Link to="/articles" className="header__link">
-            <p>Статьи</p>
+            <p>{t("header-articles")}</p>
           </Link>
         </nav>
         {/* <button className="header__button">Напишите нам</button> */}
         <div className="header__langs-button">
           <div className="header__langs">
-            <img className="header__flag" src={rus} alt="флаг России" />
-            <img className="header__flag" src={eng} alt="флаг Великобритании" />
-            <img className="header__flag" src={es} alt="флаг Испании" />
+            <button
+              className="header__flag"
+              onClick={() => changeLanguage("ru")}
+            >
+            </button>
+            <button
+              className="header__flag"
+              onClick={() => changeLanguage("en")}
+            >
+            </button>
           </div>
           <Link className="header__button" to="/contact">
-            Напишите нам
+            {t("header-button")}
           </Link>
           <div
-            className={`header__burger ${popup ? 'header__burger_pop' : ''}`}
+            className={`header__burger ${popup ? "header__burger_pop" : ""}`}
             onClick={openPopup}
           >
             <span></span>

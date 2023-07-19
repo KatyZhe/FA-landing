@@ -18,7 +18,7 @@
   }
 
   &__block {
-    max-width: 1120px;
+    max-width: 700px;
     list-style: none;
     padding: 0;
     margin: 30px auto;
@@ -29,13 +29,13 @@
   }
 
   &__item {
-    width: calc(1120px - 20px);
+    width: calc(300px);
     box-shadow: 0 5px 10px #fdf0e6;
+    text-align: center;
   }
 
   &__image {
-    width: 300px;
-    height: 400px;
+    width: 100%;
   }
 
   &__item-title {
@@ -50,10 +50,15 @@
     font-weight: bold;
   }
 
+  &__text-block {
+    max-width: 700px;
+    margin: auto;
+  }
+
   &__text {
     letter-spacing: 1.1;
-    padding: 20px;
-    text-align: justify;
+    padding-bottom: 10px;
+    padding-left: 16px;
   }
 }
 
@@ -74,6 +79,16 @@
 
     &__image {
       width: 100%;
+    }
+
+    &__text-block {
+      max-width: none;
+      margin: 0 30px;
+    }
+
+    &__text {
+      padding-left: 12px;
+      font-size: 14px;
     }
   }
 }
